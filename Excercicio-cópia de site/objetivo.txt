@@ -1,0 +1,2 @@
+O objetivo desse exercício é aplicar os conhecimentos de HTML e CSS 
+para criar um cópia de um site sem usar algum framework.

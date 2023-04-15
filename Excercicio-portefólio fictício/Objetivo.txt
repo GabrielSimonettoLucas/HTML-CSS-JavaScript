@@ -1,0 +1,2 @@
+O objetivo dessa atividade é de aplicar os diversos conceitos de HTML, CSS, JS e Bootstrap 
+em um único site que representa um portefólio fictício.

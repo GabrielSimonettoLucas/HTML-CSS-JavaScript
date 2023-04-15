@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    @keyframes anim_inicio {
+        0%   {left:2000px; right:0px;}
+        100% {left:9%; right:0px;}
+    }
+    @keyframes anim_titulo {
+        0%   {left:2000px; right:0px;}
+        100% {left:0px; right:0px;}
+    }
+    @keyframes anim_cel {
+        0%   {left:2000px; right:0px;}
+        100% {left:25%; right:0px;}
+    }
+
+
+    #navbar{
+        width: 100%;
+        height: 75px;
+        position: relative;
+        background-image: linear-gradient(to top, black , gray);
+
+    }
+
+    div{
+        -border-style: solid;
+    }
+
+
+
+    .btn{
+        width: 23.5%;
+        height: 60%;
+        position: relative;
+        top: 20%;
+        bottom: 20%;
+        margin-left: 1%;
+    }
+
+    .div-img{
+        text-align: center;
+    }
+    .link{
+        font-size: 25px;
+    }
+
+
+    @media (min-width: 1140px){
+
+        #grid{
+            top: 60px;
+            left: 9%;
+            position: relative;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 17.5% 17.5% 17.5% 17.5%;
+            grid-template-rows: 200px 200px 200px ;
+            animation-name: anim_inicio;
+            animation-duration: 0.8s;  
+        }
+
+        #A{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #B{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #C{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        #exibi{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            display: grid;
+            border-style: solid;
+        }
+        .img{
+        width: 200px;
+        height: 200px;
+    }
+    }
+
+    @media (max-width: 1110px){
+        #grid{
+            top: 60px;
+            left: 25%;
+            position: relative;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 17.5% 17.5% 17.5% 17.5%;
+            grid-template-rows: 200px 200px 200px ;
+            animation-name: anim_cel;
+            animation-duration: 0.8s;  
+        }
+
+        #A{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        #B{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        #C{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        #exibi{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: grid;
+            border-style: solid;
+        }
+        .img{
+        width: 100px;
+        height: 100px;
+    }
+    }
+
+</style>
+<body>
+    <div id="navbar">
+        <a href="portfolio.html"><button type="button" class="btn btn-light">Home</button></a>
+        <a href="sobre.html"><button type="button" class="btn btn-light">Sobre</button></a>
+        <a href="experiência.html"><button type="button" class="btn btn-light">Experiência</button></a>
+        <a href=""><button type="button" class="btn btn-light">Projetos</button></a>
+    </div>
+
+    <div style="width: 100%;text-align: center; top: 30px; position: relative; animation-name: anim_titulo; animation-duration: 0.8s;">
+        <h1>Selecione a Linguagem para Exibir os Projetos:</h1>
+    </div>
+
+    <div id="grid">
+        <div class="item" id="A" onclick="alterarborda(1)"><div class="div-img"><img src="imgs/c.png" class="img"></div></div>
+        <div class="item" id="B" onclick="alterarborda(2)"><div class="div-img"><img src="imgs/java.png" class="img"></div></div>
+        <div class="item" id="C" onclick="alterarborda(3)"><div class="div-img"><img src="imgs/Python-logo-notext.svg.png" class="img"></div></div>
+        <div id="exibi">
+            <a class="link" id="l1"></a>
+            <a class="link" id="l2"></a>
+            <a class="link" id="l3"></a>
+            <a class="link" id="l4"></a>
+            <a class="link" id="l5"></a>
+            <a class="link" id="l6"></a>
+            <a class="link" id="l7"></a>
+            <a class="link" id="l8"></a>
+        </div>
+    </div>
+</body>
+<script>
+    function clean(){
+        var vet = document.getElementsByClassName("item")
+        for(var a=0;a<vet.length;a++){
+            vet[a].style.border = "0px solid red"
+        }
+        var links = document.getElementsByClassName("link")
+        for(var a=0;a<8;a++){
+            links[a].innerHTML=""
+        }
+    }
+    function alterarborda(indicador){
+        clean()
+        if (indicador == 1){
+            var tag = document.getElementById("A")
+            tag.style.border = "8px solid black"
+            var lin = document.getElementsByClassName("link")
+            lin[0].innerHTML="Lista Dinamica Duplamente Encadeada"
+            lin[0].href="https://github.com/GabrielSimonettoLucas/C/tree/main/Lista%20Dinamica%20Duplamente%20Encadeada"
+            lin[1].innerHTML="Atividade Estrutura de Dados Pilha Dinamica"
+            lin[1].href="https://github.com/GabrielSimonettoLucas/C/tree/main/Atividade%20Estrutura%20de%20Dados%20Pilha%20Dinamica"
+            lin[2].innerHTML="Atividade Pesquisa por Arvores Binarias"
+            lin[2].href="https://github.com/GabrielSimonettoLucas/C/tree/main/Atividade%20Pesquisa%20por%20Arvores%20Binarias"
+            lin[3].innerHTML="Exercicio básico Calcular Tarifa de Energia"
+            lin[3].href="https://github.com/GabrielSimonettoLucas/C/tree/main/Exercicio%20b%C3%A1sico%20Calcular%20Tarifa%20de%20Energia"
+            lin[4].innerHTML="Exercicio básico Censura de Valores Monetários"
+            lin[4].href="https://github.com/GabrielSimonettoLucas/C/tree/main/Exercicio%20b%C3%A1sico%20Censura%20de%20Valores%20Monet%C3%A1rios"
+        }
+        if (indicador == 2){
+            var tag = document.getElementById("B")
+            tag.style.border = "8px solid black"
+            var lin = document.getElementsByClassName("link")
+            lin[0].innerHTML="Gui-banco"
+            lin[0].href="https://github.com/GabrielSimonettoLucas/Java/tree/main/gui-banco"
+        }
+        if (indicador == 3){
+            var tag = document.getElementById("C")
+            tag.style.border = "8px solid black"
+            var lin = document.getElementsByClassName("link")
+            lin[0].innerHTML="Projeto de Pesquisa Utilizando Python"
+            lin[0].href="https://github.com/GabrielSimonettoLucas/Python-Projeto-de-Pesquisa/settings"
+        }
+
+    }
+</script>
+</html>

@@ -1,0 +1,2 @@
+O objetivo desse exercício foi aplicar os conhecimentos sobre responsividade e 
+mediabreaker do CSS criando um site que se adapta de acordo com o tamanho do display do usuário.

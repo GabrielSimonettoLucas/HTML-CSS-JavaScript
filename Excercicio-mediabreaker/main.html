@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media (min-width: 1px) and (max-width: 650px){
+        #titulo{
+            margin-left: 15%;
+        }
+        #div_buton{
+            width: 100%;
+            float: left;
+        }
+        .buton{
+            width: 20%;
+            margin-left: 2%;
+            margin-right: 2%;
+            height: 20px;
+            background-color: blue;
+            color: white;
+        }
+        .casas{
+            margin-left: 2%; 
+            margin-right: 2%;
+            text-align: center;
+        }
+        .labe_div{
+            text-align: center;
+        }
+        img{
+            width: 300px;
+            height: 150px;        
+        }
+    }
+    @media (min-width: 650px){
+        #div_buton{
+            width: 15%;
+            float: left;
+        }
+        .buton{
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+            color: white;
+        }
+        #titulo{
+            margin-left: 34%;
+        }
+        img{
+            width: 220px;
+            height: 180px;        
+        }
+        .casas{
+            float: left;
+            margin-left: 2%; 
+            margin-right: 2%;
+        }
+        #menus{
+            width: 85%;
+            float: left;
+        }
+        .labe_div{
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div id="titulo"><h1>IMOBILIARIA NEW HOUSE</h1></div>
+    <div id="div_buton">
+        <button id="b1", class="buton">Botão 1</button><button id="b2", class="buton">Botão 2</button><button id="b3", class="buton">Botão 3</button><button id="b4", class="buton">Botão 4</button>
+    </div>
+    <div id="menus">
+        <div class="casas"> 
+            <img src="img/imaages.jpg" alt="casa"> 
+            <div class="labe_div"><label class="labe"> R$: 20000.22 </label> 
+            </div>
+        </div>
+        <div class="casas"> 
+            <img src="img/casas-parana_amazonas_15376m2_2-1024x576.jpg" alt="casa">
+            <div class="labe_div"><label class="labe"> R$: 20000.22 </label> 
+            </div>
+        </div>
+        <div class="casas"> 
+            <img src="img/casas-parana_industrial_14350m2_4-1024x576.jpg" alt="casa">
+            <div class="labe_div"><label class="labe"> R$: 20000.22 </label> 
+            </div>
+        </div>
+        <div class="casas"> 
+            <img src="img/images.jpg" alt="casa">
+            <div class="labe_div"><label class="labe"> R$: 20000.22 </label> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
